@@ -77,6 +77,11 @@ tmdbId: The identifier of the movie in the TMDB system.
 
 # Modelling
 
+
+- Comparatively, the baseline model, although a foundational starting point, lacked the nuanced precision necessary for confident medical decision-making. Model 2, while showing promise in certain aspects, struggled with overfitting issues and faced challenges in accurately classifying specific classes, especially the Spleen class. Model 4, although emphasizing precision, encountered complexities in identifying the Bowel class, resulting in exceedingly low accuracy and precision metrics.
+- In contrast, Model 3 not only exhibited stable accuracy and precision across multiple classes but also showcased consistent performance on both the validation and test datasets. Its ability to maintain accuracy while significantly reducing false positives makes it the ideal choice for our abdominal trauma classification task. Moreover, the meticulous hyperparameter tuning, the focus on minimizing false positives, and the use of a pre-trained ResNet50 backbone network with frozen layers contributed to the model's impressive performance.
+
+- **Therefore, based on its balanced accuracy, enhanced precision, and consistent performance across various classes and datasets, Model 3 stands as the optimal choice for our abdominal trauma classification and severity prediction task, providing a reliable and accurate tool for medical professionals in critical diagnosis."**
      
 # Results and Conclusion
 * Injury Presence in the presence of Any injury: Our analysis highlighted the prevalence of specific injury in the presence of any abdominal injury. Bowel injury and extravasation injury tend to be more common when any abdominal injury is detected. This can help medical professionals identify common injury combinations for more targeted assessments.
