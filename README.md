@@ -79,5 +79,21 @@ tmdbId: The identifier of the movie in the TMDB system.
 
      
 # Results and Conclusion
+* Injury Presence in the presence of Any injury: Our analysis highlighted the prevalence of specific injury in the presence of any abdominal injury. Bowel injury and extravasation injury tend to be more common when any abdominal injury is detected. This can help medical professionals identify common injury combinations for more targeted assessments.
+* Severity differences: Liver low severity was prominent with liver high being least reccuring. Understanding these severity patterns will play a crucial pattern in the classification and priority cases for medical treatment.
+* Incomplete Organ Instances: The presence of incomplete organs, though relatively rare, was noted. This underscores the importance of developing models that can accurately diagnose injuries even in cases where organ visibility might be compromised due to incomplete imaging data.
+* Class Relationships: Our analysis showcased relationships between different injury types, highlighting, for instance, the completeness of organs in cases of bowel and extravasation injuries. Understanding these relationships can guide the model's focus on specific injury types and associated organ statuses.
+* Patterns in CT Scans: The scan images revealed subtle differences in hyperdensity, potentially indicating injury severity. These insights suggest the importance of capturing intricate patterns in abdominal trauma, indicating the need for advanced image processing techniques.
+* Spleen Injury Complexity: All models encountered challenges in spleen injury classification. Despite improvements, accurately detecting spleen injuries remained a significant hurdle, indicating a need for advanced approaches specific to this class.
+* Complexity of Aortic Hounsfield Units (HU): The analysis of Aortic HU distributions provided insights into the variation in CT scan values. Though not used for our modelling in this project, understanding the complexity of these values, including outliers and skewed distributions, is essential for developing algorithms that can accurately interpret these variations, further aiding in injury severity assessment.
+* Class Imbalance Impact: Addressing class imbalance significantly improved model performance, ensuring accurate predictions across various organ injuries.
+Precision Over Accuracy: Emphasizing precision, especially in a medical context, led to the reduction of false positives, crucial in avoiding unnecessary interventions and treatments.
+* Model Complexity: While a more complex architecture like DenseNet121 was employed, careful attention to tuning and understanding the trade-offs between accuracy and false positives played a pivotal role in the model's success.
+* Consistency and Reliability: Model 3 emerged as the optimal choice due to its balanced accuracy, enhanced precision, and consistent performance across various classes and datasets. It will provide a reliable tool for medical professionals in critical diagnoses.
+
 
 # Recommendation
+* User Training: Provide training sessions to medical practitioners who will be utilizing the model. Familiarize them with its capabilities, limitations, and interpretation of results for effective and informed decision-making.
+* Explainable AI Implementation: Integrating explainable AI techniques into the model to provide transparent insights into the decision-making process. 
+* Continuous Evaluation: Establish a framework for continuous evaluation and feedback gathering from the medical practitioners to help identify real-world challenges and opportunities for model enhancement.
+
