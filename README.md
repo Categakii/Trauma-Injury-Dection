@@ -76,7 +76,8 @@ tmdbId: The identifier of the movie in the TMDB system.
 * What are the appropriate metrics for evaluating the performance of the developed AI algorithms in terms of both machine learning benchmarks and clinical utility?
 
 # Modelling
-
+ ![](modelling_3.png)
+  ![](modelling_3_explana.png)
 
 - Comparatively, the baseline model, although a foundational starting point, lacked the nuanced precision necessary for confident medical decision-making. Model 2, while showing promise in certain aspects, struggled with overfitting issues and faced challenges in accurately classifying specific classes, especially the Spleen class. Model 4, although emphasizing precision, encountered complexities in identifying the Bowel class, resulting in exceedingly low accuracy and precision metrics.
 - In contrast, Model 3 not only exhibited stable accuracy and precision across multiple classes but also showcased consistent performance on both the validation and test datasets. Its ability to maintain accuracy while significantly reducing false positives makes it the ideal choice for our abdominal trauma classification task. Moreover, the meticulous hyperparameter tuning, the focus on minimizing false positives, and the use of a pre-trained ResNet50 backbone network with frozen layers contributed to the model's impressive performance.
